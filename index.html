@@ -60,17 +60,21 @@ section.content{padding:34px clamp(18px,5.5vw,72px)}
 .closing{text-align:center;padding:42px 20px 70px;background:var(--paper);border-top:1px solid var(--line)}
 .closing h2{font-size:clamp(24px,4vw,38px);font-style:italic;font-weight:normal;color:var(--wine)}
 footer{background:var(--wine);color:#fff4e8;text-align:center;padding:18px;font:11px Arial,sans-serif;letter-spacing:1px}
-.envelope-screen{position:fixed;z-index:10000;inset:0;background:var(--ivory);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;transition:opacity .8s ease,visibility .8s ease}
-.envelope-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
-.envelope-title{font:12px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;margin-bottom:32px}
-.envelope{width:min(78vw,330px);height:205px;position:relative;background:#e8d5bf;border:1px solid var(--gold);box-shadow:0 18px 45px #54263820}
-.envelope-paper{position:absolute;left:15px;right:15px;top:12px;height:170px;background:var(--paper);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;font-size:24px;color:var(--wine)}
-.envelope-paper small{font:10px Arial,sans-serif;letter-spacing:2px;margin-top:10px}
-.flap{position:absolute;inset:0;background:#d5b995;clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top;transition:transform .7s;z-index:2}
-.seal{position:absolute;z-index:3;left:50%;top:53%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;border:2px solid #d7b875;background:var(--wine);color:#fff4e8;font-size:18px;cursor:pointer}
-.envelope-screen.opening .flap{transform:rotateX(180deg)}
-.envelope-hint{font:10px Arial,sans-serif;letter-spacing:2px;margin-top:30px}
-.skip{border:1px solid var(--gold);background:transparent;color:var(--wine-dark);border-radius:25px;padding:11px 20px;cursor:pointer}
+.envelope-screen{position:fixed;z-index:10000;inset:0;background:radial-gradient(ellipse at 50% 35%,#fffdf8 0,#f7f0e8 58%,#eadcc9 100%);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;perspective:1400px;overflow:hidden;transition:opacity .9s ease,visibility .9s ease}
+.envelope-screen:before,.envelope-screen:after{content:"";position:absolute;width:min(82vw,620px);height:min(82vw,620px);border:1px solid #bd985c35;border-radius:50%;pointer-events:none}.envelope-screen:after{width:min(68vw,500px);height:min(68vw,500px)}
+.envelope-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}.envelope-title{position:relative;z-index:1;font:11px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--wine-dark);margin-bottom:30px}
+.envelope-scene{position:relative;z-index:1;width:min(82vw,390px);height:300px;display:flex;align-items:flex-end;justify-content:center;perspective:1200px;filter:drop-shadow(0 28px 22px #54263822)}
+.envelope{position:relative;width:100%;height:220px;transform-style:preserve-3d;transform:rotateX(7deg) rotateY(-5deg);transition:transform .8s cubic-bezier(.2,.75,.25,1)}
+.envelope-body{position:absolute;inset:0;background:linear-gradient(145deg,#f1dfc8,#d7b993 72%,#c8a67b);border:1px solid #bd985c;overflow:hidden;transform:translateZ(1px)}
+.envelope-body:before{content:"";position:absolute;inset:0;background:linear-gradient(32deg,transparent 49.5%,#bd985c 49.8%,#fff2db 50.2%,transparent 50.6%),linear-gradient(-32deg,transparent 49.5%,#bd985c 49.8%,#fff2db 50.2%,transparent 50.6%);opacity:.8}
+.envelope-lip{position:absolute;z-index:4;left:0;right:0;bottom:0;height:65%;background:linear-gradient(150deg,#e5cfb0,#c8a77d);clip-path:polygon(0 0,50% 66%,100% 0,100% 100%,0 100%);border-bottom:1px solid #bd985c;transform:translateZ(8px)}
+.envelope-flap{position:absolute;z-index:6;left:0;top:0;width:100%;height:64%;background:linear-gradient(160deg,#fff0d9,#d7b993 90%);clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0%;transform:translateZ(10px) rotateX(0deg);transition:transform 1s cubic-bezier(.2,.7,.15,1)}
+.invitation-card{position:absolute;z-index:3;left:7%;width:86%;height:88%;bottom:6%;padding:18px 12px;background:linear-gradient(135deg,#fffdf7,#f7ebdc);border:1px solid #c8a66e;box-shadow:0 7px 18px #54263820;display:flex;align-items:center;justify-content:center;flex-direction:column;color:var(--wine);transform:translate3d(0,0,4px);transition:transform 1.15s cubic-bezier(.16,.8,.2,1),box-shadow 1s}
+.invitation-card:before{content:"";position:absolute;inset:8px;border:1px solid #bd985c80;pointer-events:none}.card-kicker{font:8px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}.card-names{font-size:clamp(23px,6vw,34px);font-style:italic;line-height:1.05;margin:9px 0}.card-date{font:9px Arial,sans-serif;letter-spacing:2px;margin-top:5px}
+.seal{position:absolute;z-index:8;left:50%;top:49%;transform:translate(-50%,-50%) translateZ(18px);width:62px;height:62px;border-radius:50%;border:2px solid #e6c985;background:radial-gradient(circle at 32% 25%,#9c4655 0,#76283b 48%,#4f1727 100%);color:#fff5df;font-size:17px;box-shadow:0 5px 12px #4a172633,inset 0 0 0 3px #76283b,inset 0 0 0 4px #d8b36c;cursor:pointer;transition:opacity .35s,transform .45s}.seal:after{content:"";position:absolute;inset:7px;border:1px solid #d9b56e;border-radius:50%}
+.envelope-screen.opening .envelope{transform:rotateX(0deg) rotateY(0deg) translateY(4px)}.envelope-screen.opening .envelope-flap{transform:translateZ(10px) rotateX(180deg)}.envelope-screen.opening .invitation-card{transform:translate3d(0,-125px,45px) rotateX(2deg);box-shadow:0 24px 30px #54263824}.envelope-screen.opening .seal{opacity:0;transform:translate(-50%,-50%) translateZ(18px) scale(.65)}
+.envelope-hint{position:relative;z-index:1;font:10px Arial,sans-serif;letter-spacing:2.5px;color:var(--wine-dark);margin:34px 0 18px}.skip{position:relative;z-index:1;border:1px solid var(--gold);background:#fffaf480;color:var(--wine-dark);border-radius:25px;padding:11px 20px;cursor:pointer;font:11px Arial,sans-serif;letter-spacing:1px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.envelope-screen,.envelope-flap,.invitation-card,.seal{transition:none!important}}
 @media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column}.nav{flex-wrap:wrap}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 18px 38px}.hero-photo{min-height:350px;border-left:0;border-top:2px solid var(--gold);border-radius:50% 50% 0 0 / 12% 12% 0 0}.events{grid-template-columns:1fr}.event{padding:23px}.venue{grid-template-columns:1fr}.venue-copy{padding:8px}.gallery{gap:9px}.gallery figure{aspect-ratio:3/4}.timebox{min-width:75px;padding:10px}.timebox b{font-size:30px}.countdown h2,.section-title{font-size:15px;letter-spacing:2px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.envelope-screen,.flap{transition:none}}
 </style>
@@ -83,13 +87,12 @@ footer{background:var(--wine);color:#fff4e8;text-align:center;padding:18px;font:
 <body>
 <div class="envelope-screen" id="envelope-screen" aria-label="Wedding invitation opening screen">
   <div class="envelope-title">A special invitation</div>
-  <div class="envelope" aria-label="Decorative wedding envelope">
-    <div class="envelope-paper"><span>Deeksha</span><span style="color:var(--gold);font-style:italic">&amp;</span><span>Abhishek</span><small>17 NOVEMBER 2026</small></div>
-    <div class="flap"></div>
+  <div class="envelope-scene"><div class="envelope" aria-label="Three-dimensional wedding invitation envelope">
+    <div class="invitation-card"><span class="card-kicker">Together with our families</span><span class="card-names">Deeksha<br><span style="color:var(--gold)">&amp;</span><br>Abhishek</span><span class="card-date">17 NOVEMBER 2026</span></div>
+    <div class="envelope-body"></div><div class="envelope-lip"></div><div class="envelope-flap"></div>
     <button class="seal" id="open-invite" aria-label="Open wedding invitation">D &amp; A</button>
-  </div>
-  <p class="envelope-hint">TAP THE SEAL TO OPEN</p>
-  <button class="skip" id="skip-invite">View invitation</button>
+  </div></div>
+  <p class="envelope-hint">TAP THE GOLD SEAL TO OPEN</p><button class="skip" id="skip-invite">View invitation</button>
 </div>
 <header class="topbar">
   <a class="brand" href="#home">Deeksha &amp; Abhishek</a>
