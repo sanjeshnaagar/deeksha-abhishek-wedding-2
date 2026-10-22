@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f0e8">
+<meta name="description" content="Wedding invitation for Deeksha and Abhishek, 16–17 November 2026, Guna.">
+<title>Deeksha &amp; Abhishek — Wedding Invitation</title>
+<style>
+:root{--ivory:#f7f0e8;--paper:#fffaf4;--wine:#76283b;--wine-dark:#542638;--gold:#bd985c;--line:#ddc7aa;--ink:#583b38}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+button,a{font:inherit}
+a{color:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid #bd985c;outline-offset:4px}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:18px clamp(18px,5vw,64px);background:#fffaf4eF;border-bottom:1px solid var(--line)}
+.brand{font-size:clamp(20px,3vw,30px);color:var(--wine);text-decoration:none}
+.nav{display:flex;align-items:center;gap:clamp(10px,2.5vw,30px);font:12px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase}
+.nav a{text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1.1fr;min-height:500px;overflow:hidden;background:radial-gradient(ellipse at 12% 15%,#fffdf9 0,transparent 55%),var(--ivory)}
+.hero-copy{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:54px 24px}
+.eyebrow,.section-kicker{font:12px Arial,sans-serif;letter-spacing:4px;text-transform:uppercase;color:var(--wine-dark)}
+h1{font-size:clamp(46px,7vw,82px);font-weight:normal;font-style:italic;line-height:.98;color:var(--wine);margin:22px 0}
+.amp{display:flex;align-items:center;gap:22px;font-size:40px;color:var(--wine);margin:5px 0}
+.amp:before,.amp:after{content:"";height:1px;width:70px;background:var(--gold)}
+.hero-date{font:14px Arial,sans-serif;letter-spacing:4px;color:var(--wine);margin-top:20px}
+.hero-photo{position:relative;min-height:440px;overflow:hidden;border-left:2px solid var(--gold);border-radius:48% 0 0 48% / 65% 0 0 65%}
+.hero-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover}
+.photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:24px;background:linear-gradient(145deg,#d7c0a4,#f5e8d7 48%,#a66d70);color:#fffaf4}
+.photo-placeholder strong{font-size:26px;font-style:italic;font-weight:normal}
+.photo-placeholder span{font:12px Arial,sans-serif;letter-spacing:2px;margin-top:10px}
+.photo-frame img:not([src=""]){display:block}
+.countdown{text-align:center;padding:28px 16px 18px}
+.countdown h2,.section-title{font-size:18px;font-weight:normal;letter-spacing:4px;text-transform:uppercase;color:var(--wine)}
+.timer{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}
+.timebox{min-width:96px;padding:12px 18px;border:1px solid var(--line);border-radius:12px;background:#fffaf455}
+.timebox b{display:block;font-size:38px;font-weight:normal;color:var(--wine)}
+.timebox span{font:11px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase}
+section.content{padding:34px clamp(18px,5.5vw,72px)}
+.section-heading{text-align:center;margin-bottom:28px}
+.section-title{margin:0 0 10px}
+.flourish{color:var(--gold);letter-spacing:8px}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.event{padding:25px 24px;border:1px solid var(--line);border-radius:13px;background:#fffaf455}
+.event-icon{font-size:37px;color:var(--wine);text-align:center;margin-bottom:14px}
+.event h3{text-align:center;font-size:17px;font-weight:normal;letter-spacing:2px;text-transform:uppercase;color:var(--wine);margin:0 0 22px}
+.event p{display:flex;gap:12px;align-items:flex-start;line-height:1.45;margin:12px 0}
+.event p span:first-child{min-width:22px;color:var(--wine)}
+.venue{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;padding:16px;border:1px solid var(--line);border-radius:14px;background:#fffaf455}
+.venue-photo{position:relative;min-height:220px;border-radius:10px;overflow:hidden;background:linear-gradient(135deg,#8e765d,#e4c79e,#76515a)}
+.venue-photo img{width:100%;height:100%;min-height:220px;position:absolute;inset:0;object-fit:cover}
+.venue-copy{padding:20px}
+.venue-copy h3{font-size:clamp(22px,3vw,30px);font-weight:normal;color:var(--wine);margin:10px 0}
+.button{display:inline-block;margin-top:12px;padding:13px 20px;background:var(--wine);color:#fffaf4;border-radius:28px;text-decoration:none;font:12px Arial,sans-serif;letter-spacing:1.5px;text-transform:uppercase}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gallery figure{margin:0;position:relative;aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:linear-gradient(145deg,#d7c0a4,#f5e8d7 48%,#a66d70)}
+.gallery img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 12px 14px;color:white;text-align:center;background:linear-gradient(transparent,#3b1c25a8);font-style:italic}
+.closing{text-align:center;padding:42px 20px 70px;background:var(--paper);border-top:1px solid var(--line)}
+.closing h2{font-size:clamp(24px,4vw,38px);font-style:italic;font-weight:normal;color:var(--wine)}
+footer{background:var(--wine);color:#fff4e8;text-align:center;padding:18px;font:11px Arial,sans-serif;letter-spacing:1px}
+.envelope-screen{position:fixed;z-index:10000;inset:0;background:var(--ivory);display:flex;align-items:center;justify-content:center;flex-direction:column;text-align:center;padding:24px;transition:opacity .8s ease,visibility .8s ease}
+.envelope-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.envelope-title{font:12px Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;margin-bottom:32px}
+.envelope{width:min(78vw,330px);height:205px;position:relative;background:#e8d5bf;border:1px solid var(--gold);box-shadow:0 18px 45px #54263820}
+.envelope-paper{position:absolute;left:15px;right:15px;top:12px;height:170px;background:var(--paper);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:4px;font-size:24px;color:var(--wine)}
+.envelope-paper small{font:10px Arial,sans-serif;letter-spacing:2px;margin-top:10px}
+.flap{position:absolute;inset:0;background:#d5b995;clip-path:polygon(0 0,100% 0,50% 62%);transform-origin:top;transition:transform .7s;z-index:2}
+.seal{position:absolute;z-index:3;left:50%;top:53%;transform:translate(-50%,-50%);width:60px;height:60px;border-radius:50%;border:2px solid #d7b875;background:var(--wine);color:#fff4e8;font-size:18px;cursor:pointer}
+.envelope-screen.opening .flap{transform:rotateX(180deg)}
+.envelope-hint{font:10px Arial,sans-serif;letter-spacing:2px;margin-top:30px}
+.skip{border:1px solid var(--gold);background:transparent;color:var(--wine-dark);border-radius:25px;padding:11px 20px;cursor:pointer}
+@media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column}.nav{flex-wrap:wrap}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 18px 38px}.hero-photo{min-height:350px;border-left:0;border-top:2px solid var(--gold);border-radius:50% 50% 0 0 / 12% 12% 0 0}.events{grid-template-columns:1fr}.event{padding:23px}.venue{grid-template-columns:1fr}.venue-copy{padding:8px}.gallery{gap:9px}.gallery figure{aspect-ratio:3/4}.timebox{min-width:75px;padding:10px}.timebox b{font-size:30px}.countdown h2,.section-title{font-size:15px;letter-spacing:2px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.envelope-screen,.flap{transition:none}}
+</style>
+</head>
+<body>
+<div class="envelope-screen" id="envelope-screen" aria-label="Wedding invitation opening screen">
+  <div class="envelope-title">A special invitation</div>
+  <div class="envelope" aria-label="Decorative wedding envelope">
+    <div class="envelope-paper"><span>Deeksha</span><span style="color:var(--gold);font-style:italic">&amp;</span><span>Abhishek</span><small>17 NOVEMBER 2026</small></div>
+    <div class="flap"></div>
+    <button class="seal" id="open-invite" aria-label="Open wedding invitation">D &amp; A</button>
+  </div>
+  <p class="envelope-hint">TAP THE SEAL TO OPEN</p>
+  <button class="skip" id="skip-invite">View invitation</button>
+</div>
+<header class="topbar">
+  <a class="brand" href="#home">Deeksha &amp; Abhishek</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#events">Events</a><a href="#photos">Photos</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a>
+  </nav>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-copy">
+    <div class="eyebrow">Together with our families</div>
+    <h1>Deeksha<br><span class="amp">&amp;</span>Abhishek</h1>
+    <p class="eyebrow">We invite you to celebrate<br>our wedding</p>
+    <div class="hero-date">17 NOVEMBER 2026</div>
+  </div>
+  <div class="hero-photo">
+    <div class="photo-placeholder" id="hero-placeholder"><strong>Your favourite couple photo</strong><span>ADD couple-portrait.jpg TO THIS FOLDER</span></div>
+    <img src="couple-portrait.jpg" alt="Deeksha and Abhishek" onerror="this.style.display='none'" onload="document.getElementById('hero-placeholder').style.display='none'">
+  </div>
+</section>
+<section class="countdown" aria-label="Wedding countdown">
+  <h2>Countdown to our big day</h2>
+  <div class="timer">
+    <div class="timebox"><b id="days">—</b><span>Days</span></div><div class="timebox"><b id="hours">—</b><span>Hours</span></div><div class="timebox"><b id="minutes">—</b><span>Minutes</span></div><div class="timebox"><b id="seconds">—</b><span>Seconds</span></div>
+  </div>
+</section>
+<section class="content" id="events">
+  <div class="section-heading"><h2 class="section-title">Wedding Events</h2><div class="flourish">— ❀ —</div></div>
+  <div class="events">
+    <article class="event"><div class="event-icon" aria-hidden="true">❋</div><h3>Mehendi &amp; Haldi</h3><p><span>▦</span><span>16 November 2026</span></p><p><span>◷</span><span>11:00 AM</span></p><p><span>⌖</span><span>Shubham Highway Treat &amp; Resort, Guna</span></p></article>
+    <article class="event"><div class="event-icon" aria-hidden="true">♫</div><h3>Sangeet Night</h3><p><span>▦</span><span>16 November 2026</span></p><p><span>◷</span><span>6:00 PM</span></p><p><span>⌖</span><span>Shubham Highway Treat &amp; Resort, Guna</span></p></article>
+    <article class="event"><div class="event-icon" aria-hidden="true">♡</div><h3>Wedding</h3><p><span>▦</span><span>17 November 2026</span></p><p><span>◷</span><span>8:00 PM</span></p><p><span>⌖</span><span>Shubham Highway Treat &amp; Resort, Guna</span></p></article>
+  </div>
+</section>
+<section class="content" id="photos">
+  <div class="section-heading"><h2 class="section-title">A little love, captured</h2><div class="flourish">— ♡ —</div></div>
+  <div class="gallery">
+    <figure><img src="couple-portrait.jpg" alt="Deeksha and Abhishek portrait" onerror="this.style.display='none'"><figcaption>Our story</figcaption></figure>
+    <figure><img src="couple-walking.jpg" alt="Deeksha and Abhishek together" onerror="this.style.display='none'"><figcaption>Side by side</figcaption></figure>
+    <figure><img src="rings-mehndi.jpg" alt="Wedding rings and mehndi details" onerror="this.style.display='none'"><figcaption>Little details</figcaption></figure>
+  </div>
+  <p style="text-align:center;font:12px Arial,sans-serif;line-height:1.7">Add your photos using the filenames shown in the README. All gallery frames are the same size.</p>
+</section>
+<section class="content" id="venue">
+  <div class="venue">
+    <div class="venue-photo"><div class="photo-placeholder"><strong>Our wedding venue</strong><span>ADD venue.jpg TO THIS FOLDER (OPTIONAL)</span></div><img src="venue.jpg" alt="Shubham Highway Treat & Resort" onerror="this.style.display='none'" onload="this.previousElementSibling.style.display='none'"></div>
+    <div class="venue-copy"><div class="section-kicker">Our venue</div><h3>Shubham Highway Treat &amp; Resort</h3><p>Guna, Madhya Pradesh</p><a class="button" href="https://www.google.com/maps/search/?api=1&query=Shubham+Highway+Treat+%26+Resort+Guna" target="_blank" rel="noopener">⌖ Get directions</a></div>
+  </div>
+</section>
+<section class="closing" id="rsvp"><div class="flourish">— ♡ —</div><h2>Two hearts, one journey, forever</h2><p>We can't wait to celebrate this special day with you!</p><a class="button" href="https://wa.me/?text=You%27re%20invited%20to%20celebrate%20Deeksha%20%26%20Abhishek%27s%20wedding%20on%2017%20November%202026.%20Venue%3A%20Shubham%20Highway%20Treat%20%26%20Resort%2C%20Guna." target="_blank" rel="noopener">Share invitation on WhatsApp</a></section>
+</main>
+<footer>MADE WITH LOVE FOR DEEKSHA &amp; ABHISHEK · NOVEMBER 2026</footer>
+<script>
+(() => {
+  const weddingDate = new Date('2026-11-17T20:00:00+05:30').getTime();
+  function updateCountdown() {
+    const distance = weddingDate - Date.now();
+    const safe = Math.max(0, distance);
+    document.getElementById('days').textContent = Math.floor(safe / 86400000);
+    document.getElementById('hours').textContent = String(Math.floor((safe % 86400000) / 3600000)).padStart(2,'0');
+    document.getElementById('minutes').textContent = String(Math.floor((safe % 3600000) / 60000)).padStart(2,'0');
+    document.getElementById('seconds').textContent = String(Math.floor((safe % 60000) / 1000)).padStart(2,'0');
+  }
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+  const screen = document.getElementById('envelope-screen');
+  function openInvitation() {
+    screen.classList.add('opening');
+    setTimeout(() => screen.classList.add('hidden'), 700);
+  }
+  document.getElementById('open-invite').addEventListener('click', openInvitation);
+  document.getElementById('skip-invite').addEventListener('click', openInvitation);
+})();
+</script>
+</body>
+</html>
