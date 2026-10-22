@@ -74,6 +74,11 @@ footer{background:var(--wine);color:#fff4e8;text-align:center;padding:18px;font:
 @media(max-width:760px){.topbar{align-items:flex-start;flex-direction:column}.nav{flex-wrap:wrap}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 18px 38px}.hero-photo{min-height:350px;border-left:0;border-top:2px solid var(--gold);border-radius:50% 50% 0 0 / 12% 12% 0 0}.events{grid-template-columns:1fr}.event{padding:23px}.venue{grid-template-columns:1fr}.venue-copy{padding:8px}.gallery{gap:9px}.gallery figure{aspect-ratio:3/4}.timebox{min-width:75px;padding:10px}.timebox b{font-size:30px}.countdown h2,.section-title{font-size:15px;letter-spacing:2px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.envelope-screen,.flap{transition:none}}
 </style>
+
+<style>
+.venue-photo { display:block; width:100%; max-width:900px; height:clamp(220px, 55vw, 480px); object-fit:cover; object-position:center; border-radius:14px; margin:18px auto 24px; box-shadow:0 10px 30px rgba(74,20,32,.14); }
+</style>
+
 </head>
 <body>
 <div class="envelope-screen" id="envelope-screen" aria-label="Wedding invitation opening screen">
@@ -126,7 +131,6 @@ footer{background:var(--wine);color:#fff4e8;text-align:center;padding:18px;font:
     <figure><img src="https://sanjeshnaagar.github.io/Deeksha-Abhishek-wedding/couple-walking.jpg" alt="Deeksha and Abhishek together" onerror="this.style.display='none'"><figcaption>Side by side</figcaption></figure>
     <figure><img src="https://sanjeshnaagar.github.io/Deeksha-Abhishek-wedding/rings-mehndi.jpg" alt="Wedding rings and mehndi details" onerror="this.style.display='none'"><figcaption>Little details</figcaption></figure>
   </div>
-  <p style="text-align:center;font:12px Arial,sans-serif;line-height:1.7">Add your photos using the filenames shown in the README. All gallery frames are the same size.</p>
 </section>
 <section class="content" id="venue">
   <div class="venue">
@@ -159,5 +163,6 @@ footer{background:var(--wine);color:#fff4e8;text-align:center;padding:18px;font:
   document.getElementById('skip-invite').addEventListener('click', openInvitation);
 })();
 </script>
+<section class="venue-photo-wrap"><img class="venue-photo" src="venue-wedding.jpg" alt="Illustrative elegant outdoor wedding venue with maroon and gold decorations" loading="lazy"></section>
 </body>
 </html>
